@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, signal } from '@angular/core';
 import { RouterLink } from '@angular/router';
 
 @Component({
@@ -9,4 +9,6 @@ import { RouterLink } from '@angular/router';
 })
 export class RegisterComponent {
 
+  Creation = signal ("Create a new account")
+  dob = signal ("Date of birth")
 }
